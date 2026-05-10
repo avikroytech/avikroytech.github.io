@@ -19,8 +19,11 @@ import { siteConfig } from "../config";
       </div>
 
       <div class="lg:col-span-8 space-y-8">
-        <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600 text-justify">
-          {siteConfig.aboutMe}
+        <p
+          class="about-copy text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600 text-justify"
+          style={`--about-link-color: ${siteConfig.accentColor}`}
+          set:html={siteConfig.aboutMeHtml ?? siteConfig.aboutMe}
+        >
         </p>
 
         <div class="pt-4">
@@ -38,3 +41,16 @@ import { siteConfig } from "../config";
     </div>
   </div>
 </section>
+
+<style>
+  :global(.about-copy a) {
+    color: var(--about-link-color);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  :global(.about-copy a:hover) {
+    text-decoration-thickness: 2px;
+  }
+</style>

@@ -7,7 +7,7 @@ export const siteConfig = {
 
   // Social Links
   social: {
-    email: "avik.royjan@gmail.com", // UPDATE THIS with your actual email
+    email: "avik.royjan@gmail.com",
     linkedin: "https://www.linkedin.com/in/avik-roy-74b65522b/",
     github: "https://github.com/avikroytech",
     twitter: "", // Add if you have one
@@ -15,6 +15,8 @@ export const siteConfig = {
 
   // About Section - Enhanced version of your blurb
   aboutMe: "I'm a builder at heart—someone who's been writing code since age 8 and never stopped asking \"what if?\" My journey into software engineering wasn't conventional; I'm largely self-taught, learning through disciplined online courses, late-night experiments, and countless iterations. What drives me is the challenge of turning abstract ideas into tangible solutions that solve real problems. Whether it's architecting a full-stack e-commerce platform, developing Unity games with complex AI systems, or building AI-powered applications, I thrive on breaking down complex challenges and shipping products that create genuine impact. Currently a sophomore at Tesla STEM High School, I'm both AWS and Azure certified, and I'm constantly seeking new challenges that push the boundaries of what I can build.",
+
+  aboutMeHtml: "I'm a builder at heart, a self-taught developer who has been writing code since age 8 and keeps coming back to one question: what can I build that creates real impact? At Tesla STEM High School, I represent my school in state-level competitions with <a href=\"https://www.washingtontsa.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Washington TSA</a> and <a href=\"https://wafbla.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Washington FBLA</a>, applying software engineering, design, and leadership under real competitive pressure. Whether I'm building AI-powered tools, full-stack applications, or Unity games with complex systems, I focus on turning ambitious ideas into polished, useful products.",
 
   // Technical Skills
   skills: [
@@ -39,22 +41,22 @@ export const siteConfig = {
   // Featured Projects
   projects: [
     {
+      name: "Willstone Resource Hub",
+      description: "Co-designed a community resource platform for the fictional city of Willstone, featuring database search, polished CSS, and a RAG-powered AI chatbot. Built for the 2026 Washington TSA competition. [Repo not public yet]",
+      link: "https://github.com/avikroytech/?tab=repositories",
+      skills: ["TypeScript", "React", "RAG", "Database"],
+    },
+    {
+      name: "Neurovox - Advanced Accessibility Addon (NVDA)",
+      description: "Collaborated on an advanced NVDA screen reader add-on that helps blind and low-vision users understand visual media such as silent videos, slide decks, tutorials, and uncaptioned content. Built features for concise and detailed frame narration, OCR-based on-screen text reading, realtime narration, and Gemini-powered visual analysis through a companion server.",
+      link: "https://github.com/codebubs/neurovox-v2",
+      skills: ["Python", "NVDA", "Accessibility", "Gemini API", "OCR"],
+    },
+    {
       name: "Professional Code Editor & Evaluation Platform",
       description: "Co-developed a production-grade coding editor and automated evaluation system during summer 2025 internship. Built for Tesla STEM High School to enable students to write, test, and submit code assignments with real-time feedback and automated grading capabilities.",
-      link: "https://github.com/avikroytech/runtime_calculator", // Update if you have the actual repo
+      link: "https://github.com/adencoco/tscs",
       skills: ["TypeScript", "React", "Code Evaluation", "Education Tech"],
-    },
-    {
-      name: "Roy Bookstore - Full-Stack E-Commerce",
-      description: "Developed a complete online bookstore featuring integrated payment processing, user authentication, shopping cart functionality, and inventory management. Demonstrates end-to-end development from database design to responsive frontend.",
-      link: "https://github.com/avikroytech/roy_bookstore",
-      skills: ["HTML", "CSS", "JavaScript", "Payment Integration", "Database"],
-    },
-    {
-      name: "Pizza Order Platform - Flask Application",
-      description: "Built a fully functional online pizza ordering system with custom order management, real-time pricing calculations, and order tracking. My first production Flask application showcasing backend development skills.",
-      link: "https://github.com/avikroytech/pizza_order_flask",
-      skills: ["Python", "Flask", "HTML", "CSS", "SQLite"],
     },
     {
       name: "Unity Game Development Portfolio",
@@ -63,16 +65,22 @@ export const siteConfig = {
       skills: ["C#", "Unity", "Game Design", "AI Pathfinding", "3D Physics"],
     },
     {
+      name: "Procedural City Generator",
+      description: "Built a Python procedural city generator that creates grid-based urban layouts with residential, commercial, and industrial zones, generated road networks, connected-region detection, and randomized building placement with multiple building sizes.",
+      link: "https://github.com/avikroytech/City-Generation-Python",
+      skills: ["Python", "Procedural Generation", "Simulation", "Algorithms"],
+    },
+    {
+      name: "Ecological Succession Simulation",
+      description: "Developed an interactive 3D ecological succession simulation showing ecosystem progression from bare surface to climax forest. Built with React Three Fiber, procedural terrain, dynamic plant growth rules, stage-based transitions, and real-time camera controls.",
+      link: "https://github.com/avikroytech/succession-simulation",
+      skills: ["TypeScript", "Next.js", "Three.js", "React Three Fiber"],
+    },
+    {
       name: "AI Article Summarizer",
       description: "Developed an AI-powered tool that automatically summarizes articles and long-form content using natural language processing. Focused on practical AI applications for productivity enhancement.",
       link: "https://github.com/avikroytech/AI-Summarizer",
       skills: ["HTML", "JavaScript", "AI/ML", "NLP"],
-    },
-    {
-      name: "City Generation - Procedural Python",
-      description: "Implemented procedural city generation algorithms in Python, creating randomized but realistic urban layouts. Demonstrates algorithmic thinking and computational geometry skills.",
-      link: "https://github.com/avikroytech/City-Generation-Python",
-      skills: ["Python", "Algorithms", "Procedural Generation"],
     },
   ],
 
